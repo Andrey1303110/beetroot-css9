@@ -1,7 +1,3 @@
-body {
-height: 800px;
-}
-
 .main {
     width: 950px;
     height: 460px;
@@ -107,6 +103,7 @@ div {
 body {
     background-image: url(../img/bg.png);
     background-size: 100%;
+    height: 850px;
 }
 
 .right_panel {
@@ -132,8 +129,9 @@ select {
     font-weight: lighter;
 }
 
-select:hover {
-    background: ;
+.stars {
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .cart {
@@ -165,5 +163,4 @@ option {
     font-weight: 100;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
