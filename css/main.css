@@ -1,0 +1,93 @@
+.main {
+    width: 750px;
+    height: 400px;
+    background-color: #111A28;
+}
+
+.up div {
+    height: 158px;
+    width: 329px;
+}
+
+div {
+    background-repeat: round;
+}
+
+.up div:nth-child(1) {
+    background-image: url(../img/nikeblack.png);
+    position: relative;
+}
+
+.up div:nth-child(2) {
+    background-image: url(../img/nikeblue.png);
+    position: relative;
+    bottom: 158px;
+    visibility: hidden;
+}
+
+.up div:nth-child(3) {
+    background-image: url(../img/nikegreen.png);
+    position: relative;
+    bottom: 316px;
+    visibility: hidden;
+}
+
+.up div:nth-child(4) {
+    background-image: url(../img/nikeviolet.png);
+    position: relative;
+    bottom: 474px;
+    visibility: hidden;
+}
+
+.dw div {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.dw div:nth-child(1) {
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dw div:nth-child(2) {
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.dw div:nth-child(3) {
+    background-color: green;
+    border-radius: 50%;
+}
+
+.dw div:nth-child(4) {
+    background-color: rgb(174, 0, 255);
+    border-radius: 50%;
+}
+
+.dw div:nth-child(1):hover {
+    transform: scale(2);
+    transition: all .2s;
+}
+
+.dw div:nth-child(2):hover {
+    transform: scale(2);
+    transition: all .2s;
+}
+
+.dw div:nth-child(3):hover {
+    transform: scale(2);
+    transition: all .2s;
+}
+
+.dw div:nth-child(4):hover {
+    transform: scale(2);
+    transition: all .2s;
+}
+
+.dw {
+    position: relative;
+    bottom: 450px;
+    left: 100px;
+}
