@@ -40,8 +40,8 @@ div {
 }
 
 .dw div {
-    height: 30px;
-    width: 30px;
+    height: 13px;
+    width: 13px;
     display: inline-block;
     margin: 10px;
 }
@@ -90,4 +90,10 @@ div {
     position: relative;
     bottom: 450px;
     left: 100px;
+}
+
+.logo {
+    width: 65px;
+    height: 30px;
+    background-image: url(../img/nikelogo.png);
 }
