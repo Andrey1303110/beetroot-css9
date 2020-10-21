@@ -1,14 +1,32 @@
 .main {
-    width: 850px;
-    height: 400px;
+    width: 950px;
+    height: 460px;
     background-color: #111A28;
-    margin: 100px auto;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+}
 
+.left_panel {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 430px;
+    position: relative;
+    left: -100px;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
 }
 
 .up div {
-    height: 158px;
-    width: 329px;
+    height: 180px;
+    width: 375px;
 }
 
 div {
@@ -17,43 +35,39 @@ div {
 
 .up div:nth-child(1) {
     background-image: url(../img/nikeblack.png);
-    position: relative;
+    position: absolute;
 }
 
 .up div:nth-child(2) {
     background-image: url(../img/nikeblue.png);
-    position: relative;
-    bottom: 158px;
+    position: absolute;
     visibility: hidden;
 }
 
 .up div:nth-child(3) {
     background-image: url(../img/nikegreen.png);
-    position: relative;
-    bottom: 316px;
+    position: absolute;
     visibility: hidden;
 }
 
 .up div:nth-child(4) {
     background-image: url(../img/nikegred.png);
-    position: relative;
-    bottom: 474px;
+    position: absolute;
     visibility: hidden;
 }
 
 .dw div {
-    height: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
     display: inline-block;
     margin: 10px;
     transition: all .25s ease-in;
     border-radius: 50%;
-    border: solid 4px rgba(141, 141, 141, 0);
+    border: solid 3px rgba(141, 141, 141, 0);
 }
 
 .dw div:nth-child(1) {
     background-color: black;
-    
 }
 
 .dw div:nth-child(2) {
@@ -70,20 +84,82 @@ div {
 
 .dw div:hover {
     transform: scale(2);
-    border: solid 4px rgba(141, 141, 141, 0.849);
+    border: solid 3px rgba(141, 141, 141, 0.849);
 }
 
 .dw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    bottom: 450px;
-    left: 100px;
+    top: 420px;
 }
 
 .logo {
     fill: #E3E3E3;
+
 }
 
 body {
     background-image: url(../img/bg.png);
     background-size: 100%;
+}
+
+.right_panel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -50px;
+    width: 250px;
+}
+
+.star:hover {
+    fill: white;
+}
+
+select {
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    background: transparent;
+    color: rgba(245, 245, 245, 0.5);
+    border: solid 2px rgba(245, 245, 245, 0.5);
+    font-size: 19px;
+    font-weight: lighter;
+}
+
+select:hover {
+    background: ;
+}
+
+.cart {
+    color: rgba(245, 245, 245, 0.5);
+    border: solid 2px rgba(245, 245, 245, 0.5);
+    font-size: 20px;
+    background-color: #202834;
+    height: 60px;
+    width: 245px;
+}
+
+option {
+    background-color: #263c5c;
+}
+
+.right_panel p:nth-child(1) {
+    font-size: 35px;
+    color: rgba(245, 245, 245, 0.6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 80px;
+    margin-block-end: 0px;
+}
+
+.right_panel p:nth-child(2) {
+    font-size: 18px;
+    color: rgba(245, 245, 245, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
