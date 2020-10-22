@@ -128,10 +128,6 @@ select {
     font-weight: lighter;
 }
 
-select:hover {
-    background: ;
-}
-
 .cart {
     color: rgba(245, 245, 245, 0.5);
     border: solid 2px rgba(245, 245, 245, 0.5);
@@ -143,6 +139,7 @@ select:hover {
 
 option {
     background-color: #263c5c;
+    text-align: center;
 }
 
 .right_panel p:nth-child(1) {
@@ -161,5 +158,4 @@ option {
     font-weight: 100;
     margin-top: 10px;
     margin-bottom: 20px;
-
 }
