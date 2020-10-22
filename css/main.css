@@ -113,9 +113,28 @@ body {
     width: 250px;
 }
 
-.star:hover {
-    fill: white;
-}
+.rating_block {
+    width: 125px;
+    height: 25px;
+  }
+  .rating_block input[type="radio"] {
+    display: none;
+  }
+  .label_rating {
+    float: right;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background: url(../img/rating.png) round;
+    cursor: pointer;
+  }
+  /*Пишем правила смены положения background-а*/
+  .rating_block .label_rating:hover, /*Правило для ховера на текущий лейбл*/
+  .rating_block .label_rating:hover ~ .label_rating, /*Правило для всех следующих лейблов по DOM дереву*/
+  .rating_block input[type="radio"]:checked ~ .label_rating /*Правило для всех следующих лейблов после выбранного инпута, чтобы звездочки как бы зафиксировались*/
+  {
+    background-color: white;
+  }
 
 select {
     width: 100px;
@@ -126,6 +145,7 @@ select {
     border: solid 2px rgba(245, 245, 245, 0.5);
     font-size: 19px;
     font-weight: lighter;
+    cursor: pointer;
 }
 
 .stars {
@@ -140,6 +160,7 @@ select {
     background-color: #202834;
     height: 60px;
     width: 245px;
+    cursor: pointer;
 }
 
 option {
@@ -162,5 +183,10 @@ option {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.right_panel div:nth-child(4) {
+    margin-top: 20px;
     margin-bottom: 20px;
 }
