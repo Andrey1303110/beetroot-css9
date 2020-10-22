@@ -128,14 +128,11 @@ select {
     font-weight: lighter;
 }
 
-<<<<<<< HEAD
-=======
 .stars {
-    margin-top: 15px;
+    margin-top: 5px;
     margin-bottom: 15px;
 }
 
->>>>>>> 960fe68e37ce07bcf6a09f72eeade62f2ac267f6
 .cart {
     color: rgba(245, 245, 245, 0.5);
     border: solid 2px rgba(245, 245, 245, 0.5);
